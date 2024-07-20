@@ -1,40 +1,68 @@
-.container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
   padding: 20px;
-  box-sizing: border-box;
 }
 
-form {
+h1 {
+  color: #333;
+}
+
+.product-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-input {
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 16px;
+.product-card {
+  background-color: white;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
-button {
-  padding: 10px;
-  font-size: 16px;
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+.product-card button {
   background-color: #28a745;
-  color: #fff;
+  color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s;
 }
 
-button:hover {
+.product-card button:hover {
   background-color: #218838;
-}
-
-@media (max-width: 600px) {
-  .container {
-      padding: 10px;
-  }
 }
